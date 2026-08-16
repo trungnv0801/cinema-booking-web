@@ -1,0 +1,26 @@
+:root {
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-instant: 100ms;
+  --duration-fast: 150ms;
+  --duration-base: 220ms;
+  --duration-slow: 300ms;
+  --duration-scene: 400ms;
+  --duration-hero: 400ms;
+  --duration-stagger: 60ms;
+  --duration-marquee: 40s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-instant: 1ms;
+    --duration-fast: 1ms;
+    --duration-base: 1ms;
+    --duration-slow: 1ms;
+    --duration-scene: 1ms;
+    --duration-hero: 1ms;
+    --duration-stagger: 0ms;
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "brand": {
+    "name": "Halcyon Cinemas",
+    "short": "Halcyon"
+  },
+  "actions": {
+    "retry": "Thử lại",
+    "cancel": "Hủy",
+    "close": "Đóng",
+    "save": "Lưu",
+    "clearFilters": "Xóa bộ lọc",
+    "dismiss": "Bỏ qua",
+    "selectAll": "Chọn tất cả các dòng",
+    "selectRow": "Chọn dòng",
+    "backToHome": "Về trang chủ",
+    "backToConsole": "Về cổng nhân viên"
+  },
+  "pagination": {
+    "previousPage": "Trang trước",
+    "nextPage": "Trang sau",
+    "page": "Trang {{number}}"
+  },
+  "datePicker": {
+    "chooseDate": "Chọn ngày",
+    "selectDate": "Chọn một ngày",
+    "previousMonth": "Tháng trước",
+    "nextMonth": "Tháng sau"
+  },
+  "table": {
+    "noResults": "Không có kết quả.",
+    "loadError": "Không thể tải dữ liệu."
+  },
+  "states": {
+    "loading": "Đang tải…",
+    "offline": "Bạn đang ngoại tuyến"
+  },
+  "language": {
+    "label": "Ngôn ngữ",
+    "en": "English",
+    "vi": "Tiếng Việt"
+  },
+  "branch": {
+    "choose": "Chọn chi nhánh",
+    "aria": "Chọn chi nhánh",
+    "pickTitle": "Chọn chi nhánh của bạn",
+    "pickDescription": "Lịch chiếu và ghế trống được tính theo từng chi nhánh."
+  },
+  "promo": {
+    "marqueeWednesdays": "Marquee Wednesdays"
+  },
+  "nav": {
+    "guest": {
+      "home": "Trang chủ",
+      "movies": "Phim",
+      "showtimes": "Lịch chiếu",
+      "myTickets": "Vé của tôi",
+      "account": "Tài khoản"
+    },
+    "staff": {
+      "consoleLabel": "Cổng nhân viên",
+      "exitCounterMode": "Thoát chế độ quầy vé",
+      "closeShift": "Đóng ca",
+      "groups": {
+        "operations": "Vận hành",
+        "content": "Nội dung",
+        "system": "Hệ thống"
+      },
+      "items": {
+        "shiftReports": "Báo cáo ca",
+        "orders": "Đơn hàng",
+        "refunds": "Hoàn tiền",
+        "movies": "Phim",
+        "showtimes": "Lịch chiếu",
+        "branches": "Chi nhánh & Phòng chiếu",
+        "pricing": "Giá vé",
+        "staff": "Nhân viên",
+        "auditLog": "Nhật ký"
+      }
+    }
+  },
+  "footer": {
+    "legal": "© {{year}} Halcyon Cinemas. Bảo lưu mọi quyền.",
+    "tagline": "Mười một phòng chiếu tại ba chi nhánh. Chỉ cách bạn một tấm vé.",
+    "branches": "Chi nhánh",
+    "explore": "Khám phá",
+    "support": "Hỗ trợ",
+    "promotions": "Khuyến mãi",
+    "faq": "Câu hỏi thường gặp",
+    "contact": "Liên hệ",
+    "refunds": "Chính sách hoàn vé",
+    "terms": "Điều khoản dịch vụ",
+    "privacy": "Chính sách bảo mật"
+  },
+  "skipToContent": "Đến nội dung chính",
+  "search": {
+    "open": "Tìm kiếm",
+    "placeholder": "Tìm phim, suất chiếu…",
+    "results": "Kết quả tìm kiếm",
+    "hint": "Nhập ít nhất hai ký tự.",
+    "empty": "Không có kết quả cho “{{query}}”"
+  }
+}

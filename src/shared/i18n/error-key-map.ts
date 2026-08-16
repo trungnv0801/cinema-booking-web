@@ -1,0 +1,53 @@
+import type { ApiError } from '@/shared/api/types'
+
+const KNOWN_CODES = new Set([
+  'BAD_REQUEST',
+  'UNAUTHENTICATED',
+  'TOKEN_EXPIRED',
+  'FORBIDDEN',
+  'CINEMA_SCOPE_DENIED',
+  'NOT_FOUND',
+  'CONFLICT',
+  'VALIDATION_FAILED',
+  'RATE_LIMIT_EXCEEDED',
+  'INTERNAL_ERROR',
+  'SEAT_UNAVAILABLE',
+  'HOLD_EXPIRED',
+  'HOLD_LIMIT_EXCEEDED',
+  'COUPLE_SEAT_INCOMPLETE',
+  'ORPHAN_SEAT',
+  'SEAT_NOT_SELLABLE',
+  'SCREENING_CANCELLED',
+  'SCREENING_STARTED',
+  'BOOKING_NOT_PENDING',
+  'CANCEL_WINDOW_CLOSED',
+  'EMAIL_ALREADY_EXISTS',
+  'INVALID_CREDENTIALS',
+  'ACCOUNT_LOCKED',
+  'AGE_CONFIRMATION_REQUIRED',
+  'PAYMENT_ALREADY_PROCESSED',
+  'PAYMENT_FAILED',
+  'PAYMENT_EXPIRED',
+  'INSUFFICIENT_CASH',
+  'TICKET_ALREADY_USED',
+  'TICKET_WRONG_SCREENING',
+  'TICKET_TOO_EARLY',
+  'TICKET_VOIDED',
+  'SCREENING_OVERLAP',
+  'VERSION_CONFLICT',
+  'SCREENING_MOVE_TOO_FAR',
+  'SHIFT_ALREADY_CLOSED',
+  'SEAT_MAP_IN_USE',
+  'MOVIE_HAS_SCREENINGS',
+  'REFUND_NOT_PENDING',
+  'NETWORK_ERROR',
+  'UNKNOWN_ERROR',
+])
+
+export function getErrorMessageKey(code: string): string {
+  return KNOWN_CODES.has(code) ? `errors:codes.${code}` : 'errors:fallback'
+}
+
+export function getErrorMessageKeyFromError(error: ApiError): string {
+  return getErrorMessageKey(error.code)
+}

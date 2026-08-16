@@ -1,0 +1,36 @@
+.clock {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-1) var(--space-3);
+  @include numeric;
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-fg);
+  background: var(--color-surface-2);
+  border-radius: var(--radius-sm);
+}
+
+.urgent {
+  color: var(--color-on-error);
+  background: var(--color-error);
+
+  @include motion-safe {
+    animation: pulse 1s ease-in-out infinite;
+  }
+}
+
+.expired {
+  color: var(--color-on-error);
+  background: var(--color-error);
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.6;
+  }
+}

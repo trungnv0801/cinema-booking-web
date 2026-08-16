@@ -1,0 +1,102 @@
+{
+  "brand": {
+    "name": "Halcyon Cinemas",
+    "short": "Halcyon"
+  },
+  "actions": {
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "close": "Close",
+    "save": "Save",
+    "clearFilters": "Clear filters",
+    "dismiss": "Dismiss",
+    "selectAll": "Select all rows",
+    "selectRow": "Select row",
+    "backToHome": "Back to Home",
+    "backToConsole": "Back to console"
+  },
+  "pagination": {
+    "previousPage": "Previous page",
+    "nextPage": "Next page",
+    "page": "Page {{number}}"
+  },
+  "datePicker": {
+    "chooseDate": "Choose a date",
+    "selectDate": "Select a date",
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month"
+  },
+  "table": {
+    "noResults": "No results.",
+    "loadError": "Couldn't load data."
+  },
+  "states": {
+    "loading": "Loading…",
+    "offline": "You're offline"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "vi": "Tiếng Việt"
+  },
+  "branch": {
+    "choose": "Choose a branch",
+    "aria": "Choose branch",
+    "pickTitle": "Choose your branch",
+    "pickDescription": "Showtimes and seat availability are per branch."
+  },
+  "promo": {
+    "marqueeWednesdays": "Marquee Wednesdays"
+  },
+  "nav": {
+    "guest": {
+      "home": "Home",
+      "movies": "Movies",
+      "showtimes": "Showtimes",
+      "myTickets": "My Tickets",
+      "account": "Account"
+    },
+    "staff": {
+      "consoleLabel": "Staff Console",
+      "exitCounterMode": "Exit counter mode",
+      "closeShift": "Close Shift",
+      "groups": {
+        "operations": "Operations",
+        "content": "Content",
+        "system": "System"
+      },
+      "items": {
+        "shiftReports": "Shift Reports",
+        "orders": "Orders",
+        "refunds": "Refunds",
+        "movies": "Movies",
+        "showtimes": "Showtimes",
+        "branches": "Branches & Screens",
+        "pricing": "Pricing",
+        "staff": "Staff",
+        "auditLog": "Audit Log"
+      }
+    }
+  },
+  "footer": {
+    "legal": "© {{year}} Halcyon Cinemas. All rights reserved.",
+    "tagline": "Eleven screens across three branches. One ticket away.",
+    "branches": "Branches",
+    "explore": "Explore",
+    "support": "Support",
+    "promotions": "Promotions",
+    "faq": "FAQ",
+    "contact": "Contact us",
+    "refunds": "Refund policy",
+    "terms": "Terms of service",
+    "privacy": "Privacy policy"
+  },
+  "skipToContent": "Skip to main content",
+  "search": {
+    "open": "Search",
+    "placeholder": "Search movies, showtimes…",
+    "results": "Search results",
+    "hint": "Type at least two characters.",
+    "empty": "No matches for “{{query}}”"
+  }
+}

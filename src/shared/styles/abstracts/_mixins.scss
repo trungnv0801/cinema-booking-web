@@ -1,0 +1,163 @@
+@mixin focus-ring {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
+}
+
+@mixin focus-glow {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px var(--color-focus-glow);
+}
+
+@mixin numeric($tracking: 0.02em) {
+  font-family: var(--font-numeric);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+  letter-spacing: $tracking;
+}
+
+@mixin label {
+  font-size: var(--text-label);
+  font-weight: var(--font-weight-medium);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+@mixin truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin line-clamp($lines: 2) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0;
+}
+
+@mixin motion-safe {
+  @media (prefers-reduced-motion: no-preference) {
+    @content;
+  }
+}
+
+@mixin glass($bg: var(--color-glass-surface)) {
+  background: $bg;
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+}
+
+@mixin glass-header($bg: var(--color-glass-surface)) {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  border-bottom: 1px solid var(--color-border);
+
+  @include glass($bg);
+}
+
+@mixin surface($elevation: 1) {
+  background: var(--color-surface-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+
+  @if $elevation > 0 {
+    box-shadow: var(--shadow-#{$elevation});
+  }
+}
+
+@mixin ticket-stub($position: 60%, $notch-size: 0.75rem, $notch-color: var(--color-bg)) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: $position;
+    right: 0;
+    left: 0;
+    height: 2px;
+    content: '';
+    pointer-events: none;
+    background-image:
+      radial-gradient(
+        circle at left center,
+        #{$notch-color} #{$notch-size},
+        transparent calc(#{$notch-size} + 1px)
+      ),
+      radial-gradient(
+        circle at right center,
+        #{$notch-color} #{$notch-size},
+        transparent calc(#{$notch-size} + 1px)
+      ),
+      repeating-linear-gradient(
+        to right,
+        var(--color-border-strong) 0,
+        var(--color-border-strong) 6px,
+        transparent 6px,
+        transparent 12px
+      );
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-position:
+      left center,
+      right center,
+      center;
+    background-size:
+      calc(#{$notch-size} * 2) calc(#{$notch-size} * 2),
+      calc(#{$notch-size} * 2) calc(#{$notch-size} * 2),
+      100% 2px;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin ticket-stub-vertical($position: 55%, $notch-size: 0.75rem, $notch-color: var(--color-bg)) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: $position;
+    width: 2px;
+    content: '';
+    pointer-events: none;
+    background-image:
+      radial-gradient(
+        circle at top center,
+        #{$notch-color} #{$notch-size},
+        transparent calc(#{$notch-size} + 1px)
+      ),
+      radial-gradient(
+        circle at bottom center,
+        #{$notch-color} #{$notch-size},
+        transparent calc(#{$notch-size} + 1px)
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        var(--color-border-strong) 0,
+        var(--color-border-strong) 6px,
+        transparent 6px,
+        transparent 12px
+      );
+    background-repeat: no-repeat, no-repeat, repeat-y;
+    background-position:
+      top center,
+      bottom center,
+      center;
+    background-size:
+      calc(#{$notch-size} * 2) calc(#{$notch-size} * 2),
+      calc(#{$notch-size} * 2) calc(#{$notch-size} * 2),
+      2px 100%;
+    transform: translateX(-50%);
+  }
+}
