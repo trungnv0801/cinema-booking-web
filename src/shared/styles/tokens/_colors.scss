@@ -1,0 +1,50 @@
+:root {
+  --color-bg: #f4f5fb;
+  --color-surface-1: #ffffff;
+  --color-surface-2: #eef0f8;
+  --color-surface-3: #e2e5f6;
+
+  --color-primary: #e2e5f6;
+  --color-secondary: #ccd3ef;
+  --color-on-primary: var(--color-fg);
+
+  --color-fg: #14152b;
+  --color-fg-muted: #5a6178;
+  --color-fg-subtle: #98a0b3;
+  --color-ink: #f8fafc;
+
+  --color-border: rgb(67 56 202 / 16%);
+  --color-border-strong: rgb(67 56 202 / 32%);
+
+  --color-accent: #a16207;
+  --color-accent-hover: #854d0e;
+  --color-accent-muted: rgb(161 98 7 / 10%);
+  --color-on-accent: #ffffff;
+
+  --color-success: #047857;
+  --color-success-hover: #065f46;
+  --color-success-muted: rgb(4 120 87 / 10%);
+  --color-on-success: #ffffff;
+
+  --color-warning: #c2410c;
+  --color-warning-muted: rgb(194 65 12 / 10%);
+  --color-on-warning: #ffffff;
+
+  --color-error: #dc2626;
+  --color-error-hover: #b91c1c;
+  --color-error-muted: rgb(220 38 38 / 10%);
+  --color-on-error: #ffffff;
+
+  --color-neutral: var(--color-fg-muted);
+  --color-neutral-muted: rgb(90 97 120 / 9%);
+
+  --color-focus-ring: var(--color-accent);
+  --color-focus-glow: rgb(161 98 7 / 22%);
+
+  --color-glass-bg: rgb(20 21 43 / 82%);
+  --color-glass-surface: rgb(255 255 255 / 78%);
+  --color-scrim: rgb(20 21 43 / 50%);
+
+  --opacity-dimmed: 0.45;
+  --opacity-disabled: 0.4;
+}

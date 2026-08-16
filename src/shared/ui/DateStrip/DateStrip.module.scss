@@ -1,0 +1,74 @@
+.strip {
+  display: flex;
+  gap: var(--space-2);
+  padding-block: var(--space-1);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.day {
+  position: relative;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-1);
+  min-width: 3.5rem;
+  padding: var(--space-2) var(--space-1);
+  color: var(--color-fg);
+  background: var(--color-surface-1);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  scroll-snap-align: start;
+  transition:
+    background-color var(--duration-instant) var(--ease-out),
+    border-color var(--duration-instant) var(--ease-out);
+
+  &:hover:not(.selected) {
+    background: var(--color-surface-2);
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.weekday {
+  font-size: var(--text-xs);
+  color: var(--color-fg-muted);
+  text-transform: uppercase;
+}
+
+.dayNumber {
+  @include numeric;
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+}
+
+.selected {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+
+  .weekday,
+  .dayNumber {
+    color: var(--color-on-accent);
+  }
+}
+
+.promoDot {
+  display: block;
+  width: 0.3rem;
+  height: 0.3rem;
+  background: var(--color-accent);
+  border-radius: 50%;
+}
+
+.selected .promoDot {
+  background: var(--color-on-accent);
+}

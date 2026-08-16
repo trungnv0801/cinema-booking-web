@@ -1,0 +1,15 @@
+:root {
+  --elevation-0-bg: var(--color-bg);
+  --elevation-1-bg: var(--color-surface-1);
+  --elevation-2-bg: var(--color-surface-2);
+  --elevation-3-bg: var(--color-surface-1);
+
+  --shadow-1: 0 1px 2px rgb(20 21 43 / 6%), 0 8px 24px -12px rgb(30 27 75 / 18%);
+  --shadow-2: 0 2px 6px rgb(20 21 43 / 8%), 0 18px 48px -20px rgb(30 27 75 / 24%);
+  --shadow-3: 0 4px 12px rgb(20 21 43 / 10%), 0 32px 80px -28px rgb(30 27 75 / 30%);
+
+  --glow-accent: 0 0 24px -6px rgb(161 98 7 / 40%);
+
+  --blur-glass: 20px;
+  --blur-scrim: 6px;
+}

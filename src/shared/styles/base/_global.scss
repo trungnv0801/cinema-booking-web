@@ -1,0 +1,50 @@
+@use '@/shared/styles/abstracts' as *;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-fg);
+  background: var(--color-bg);
+}
+
+code,
+kbd,
+samp,
+pre {
+  @include numeric;
+}
+
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  @include focus-ring;
+
+  border-radius: var(--radius-xs);
+}
+
+::selection {
+  color: var(--color-ink);
+  background: var(--color-accent);
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

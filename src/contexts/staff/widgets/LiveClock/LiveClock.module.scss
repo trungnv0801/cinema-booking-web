@@ -1,0 +1,5 @@
+.clock {
+  @include numeric;
+  font-size: var(--text-base);
+  color: var(--color-fg);
+}

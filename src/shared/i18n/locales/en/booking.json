@@ -1,0 +1,9 @@
+{
+  "steps": {
+    "seats": "Seats",
+    "concessions": "Concessions",
+    "confirm": "Confirm",
+    "payment": "Payment"
+  },
+  "holdCountdown": "Time remaining"
+}

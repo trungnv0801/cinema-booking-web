@@ -1,0 +1,9 @@
+{
+  "steps": {
+    "seats": "Ghế ngồi",
+    "concessions": "Bắp nước",
+    "confirm": "Xác nhận",
+    "payment": "Thanh toán"
+  },
+  "holdCountdown": "Thời gian còn lại"
+}

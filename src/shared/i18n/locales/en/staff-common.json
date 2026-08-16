@@ -1,0 +1,9 @@
+{
+  "branchLocked": "{{cinemaName}} — locked to your branch",
+  "searchPlaceholder": "Search or jump to…",
+  "roles": {
+    "admin": "Admin",
+    "cashier": "Cashier",
+    "customer": "Customer"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "branchLocked": "{{cinemaName}} — khóa theo chi nhánh của bạn",
+  "searchPlaceholder": "Tìm kiếm hoặc chuyển đến…",
+  "roles": {
+    "admin": "Quản trị",
+    "cashier": "Thu ngân",
+    "customer": "Khách hàng"
+  }
+}

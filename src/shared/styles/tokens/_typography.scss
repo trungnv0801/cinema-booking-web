@@ -1,0 +1,41 @@
+:root {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-numeric: var(--font-sans);
+  --font-mono: var(--font-numeric);
+
+  --text-display: clamp(2.75rem, 8vw, 5rem);
+  --text-h1: 2rem;
+  --text-h2: 1.5rem;
+  --text-h3: 1.25rem;
+  --text-body: 1rem;
+  --text-sm: 0.875rem;
+  --text-label: 0.75rem;
+
+  --text-xs: var(--text-label);
+  --text-base: var(--text-body);
+  --text-md: var(--text-body);
+  --text-lg: var(--text-h3);
+  --text-xl: var(--text-h2);
+  --text-2xl: var(--text-h1);
+  --text-3xl: 2.5rem;
+  --text-4xl: 3rem;
+  --text-5xl: 4rem;
+  --text-6xl: 5rem;
+  --text-7xl: var(--text-display);
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.8;
+
+  --tracking-display: -0.03em;
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.1em;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: var(--font-weight-bold);
+}
