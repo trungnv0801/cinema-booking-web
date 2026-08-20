@@ -10,6 +10,10 @@ import { BlankLayout } from './layouts/BlankLayout'
 import { CounterLayout } from './layouts/CounterLayout'
 import { getStaffLandingPath } from './lib/staff-landing'
 
+const LoginScreen = lazy(() =>
+  import('./pages/LoginScreen').then((m) => ({ default: m.LoginScreen })),
+)
+
 const NotFoundScreen = lazy(() =>
   import('./pages/NotFoundScreen').then((m) => ({ default: m.NotFoundScreen })),
 )
@@ -29,7 +33,7 @@ export function StaffApp() {
               <RedirectIfAuthenticated resolveTarget={(user) => getStaffLandingPath(user)} />
             }
           >
-            <Route path={rel(ROUTES.STAFF_LOGIN.path)} element={<BlankScreen />} />
+            <Route path={rel(ROUTES.STAFF_LOGIN.path)} element={<LoginScreen />} />
           </Route>
         </Route>
 

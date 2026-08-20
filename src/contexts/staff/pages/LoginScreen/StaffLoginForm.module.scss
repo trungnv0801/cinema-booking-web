@@ -1,0 +1,29 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.passwordField {
+  position: relative;
+}
+
+.passwordField .passwordInput {
+  padding-right: 2.5rem;
+}
+
+.reveal {
+  position: absolute;
+  top: 50%;
+  right: var(--space-1);
+  transform: translateY(-50%);
+
+  &[aria-pressed='true'] {
+    color: var(--color-accent);
+  }
+}
+
+.formError {
+  font-size: var(--text-sm);
+  color: var(--color-error);
+}

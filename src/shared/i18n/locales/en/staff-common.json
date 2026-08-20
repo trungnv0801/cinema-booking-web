@@ -5,5 +5,15 @@
     "admin": "Admin",
     "cashier": "Cashier",
     "customer": "Customer"
+  },
+  "login": {
+    "title": "Staff Sign In",
+    "lead": "Use the work email your administrator set up.",
+    "email": "Work email",
+    "emailPlaceholder": "name@halcyoncinemas.com",
+    "validation": {
+      "emailRequired": "Enter your work email.",
+      "emailInvalid": "Enter a valid email address."
+    }
   }
 }

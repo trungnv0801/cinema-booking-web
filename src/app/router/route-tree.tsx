@@ -68,7 +68,10 @@ export const routeTree: RouteObject[] = [
       {
         element: <RedirectIfAuthenticated resolveTarget={() => ROUTES.HOME.path} />,
         children: [
-          { path: ROUTES.LOGIN.path, element: <BlankScreen /> },
+          {
+            path: ROUTES.LOGIN.path,
+            lazy: screen(() => import('@/contexts/guest/pages/LoginScreen'), 'LoginScreen'),
+          },
           { path: ROUTES.REGISTER.path, element: <BlankScreen /> },
         ],
       },

@@ -79,3 +79,14 @@ describe('the /staff bundle boundary', () => {
     expect(await screen.findByRole('banner')).toBeInTheDocument()
   })
 })
+
+describe('the guest tree', () => {
+  beforeEach(() => {
+    useSessionStore.setState({ user: null, status: 'anonymous' })
+  })
+
+  it('resolves a lazily-loaded screen chunk before rendering the route', async () => {
+    renderAt(ROUTES.LOGIN.path)
+    expect(await screen.findByRole('button', { name: 'Sign In' })).toBeInTheDocument()
+  })
+})

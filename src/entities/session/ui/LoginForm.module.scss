@@ -1,0 +1,57 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.passwordField {
+  position: relative;
+}
+
+.passwordField .passwordInput {
+  padding-right: 2.5rem;
+}
+
+.reveal {
+  position: absolute;
+  top: 50%;
+  right: var(--space-1);
+  transform: translateY(-50%);
+
+  &[aria-pressed='true'] {
+    color: var(--color-accent);
+  }
+}
+
+.formError {
+  font-size: var(--text-sm);
+  color: var(--color-error);
+}
+
+.forgot {
+  align-self: flex-end;
+  font-size: var(--text-sm);
+  color: var(--color-fg-muted);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--color-accent);
+  }
+}
+
+.foot {
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--color-fg-muted);
+  text-align: center;
+
+  a {
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-accent);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

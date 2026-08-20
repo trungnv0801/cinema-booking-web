@@ -5,5 +5,15 @@
     "admin": "Quản trị",
     "cashier": "Thu ngân",
     "customer": "Khách hàng"
+  },
+  "login": {
+    "title": "Đăng nhập nhân viên",
+    "lead": "Sử dụng email công việc được quản trị viên cấp cho bạn.",
+    "email": "Email công việc",
+    "emailPlaceholder": "name@halcyoncinemas.com",
+    "validation": {
+      "emailRequired": "Vui lòng nhập email công việc.",
+      "emailInvalid": "Vui lòng nhập địa chỉ email hợp lệ."
+    }
   }
 }

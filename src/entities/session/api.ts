@@ -1,4 +1,5 @@
 import { apiClient } from '@/shared/api/client'
+import type { components } from '@/shared/api/schema'
 import type { Role } from '@/shared/types/domain'
 
 export interface RegisterRequest {
@@ -14,19 +15,12 @@ export interface RegisterResponse {
   emailVerified: boolean
 }
 
-export interface LoginRequest {
-  identifier: string
-  password: string
-}
+export type LoginRequest = Required<components['schemas']['LoginRequest']>
 
-export interface LoginResponse {
-  accessToken: string
-  expiresIn: number
-  user: {
-    id: string
-    fullName: string
-    roles: Role[]
-  }
+export type LoginResponse = Required<
+  Omit<components['schemas']['LoginResponse'], 'user'>
+> & {
+  user: Required<components['schemas']['User']>
 }
 
 export interface MeResponse {
